@@ -1,0 +1,149 @@
+body {
+    background: rgb(228,31,37);
+    background: linear-gradient(142deg, rgba(228,31,37,1) 0%, rgba(255,255,255,1) 100%);
+    background-size: 400% 400%;
+    margin: 0;
+    padding: 0;
+    animation: Gradient 30s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* Menu principal */
+.menu {
+    background: #1d1d1d;
+    width: 100%;    
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu a {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.3;
+    padding: 5px;
+    outline: none;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.menu a:nth-child(1){
+    font-weight: bold;
+}
+.menu a:nth-child(2),header a:nth-child(3){
+    color: #fff;
+    font-weight: lighter;
+}
+.menu img {
+    width: 30px;
+}
+/* Main */
+.main {
+    background: #1d1d1d;
+    max-width: 1500px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: 'input input input'
+    'centerLine1 theCenter centerLine2'  
+    'description description image';
+    gap: 2%;
+    padding: 2%;
+}
+.containerInput {
+    background: #E41F25;
+    grid-area: input;
+    height: 200px;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+.containerInput input[type="text"] {
+    background: none;
+    border: none;
+    border-bottom: solid 3px #000000;
+    width: 250px;
+    height: 30px;
+    outline: none;
+}
+.containerInput button {
+    background: #000000;
+    width: 250px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.containerInput button:hover {
+    background: none;
+    border: solid 3px #000000;
+    color: #000000;
+}
+.line1 {
+    background: #2B2B2A;
+    grid-area: centerLine1;
+    height: 25px;
+}
+.line2 {
+    background: #2B2B2A;
+    grid-area: centerLine2;
+    height: 25px;
+}
+.center {
+    background: #ffffff;
+    border: solid 5px #2B2B2A;
+    grid-area: theCenter;
+    height: 25px;
+}
+.containerDescription {
+    background: #fff;
+    grid-area: description;
+}
+.containerDescription h3 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+.containerDescription p {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.containerImage {
+    background: #fff;
+    grid-area: image;
+}
+.containerImage img {
+    width: 200px;
+}
+
+
+/* Footer */
+.footer {
+    background: #1d1d1d;
+    width: 100%;    
+    height: 100px;
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    justify-content: flex-start;
+}
+.footer p {
+    margin-left: 20px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}

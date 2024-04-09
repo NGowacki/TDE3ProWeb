@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <header class="menu">
+        <a href="index.html"><img src="img/logo.png" alt=""></a>
+        <a href="#">PokeSite</a>
+    </header>
+    <main class="main">
+        <div class="containerInput">
+            <br>
+            <label for="pokemon">Digite o ID do pokemon:</label><br><br>
+            <input type="text" placeholder="pokemon" id="pokemon">
+            <br><br>
+            <button onclick="chosePokemon()">Escolher</button>
+            <br><br>
+        </div>
+        <div class="line1"></div>
+        <div class="center"></div>
+        <div class="line2"></div>
+        <div class="containerDescription">
+            <h3 id="namePokemon"></h3>
+            <p id="description"></p>
+        </div>
+        <div class="containerImage">
+            <img src="" alt="" id="imgPokemon">
+        </div>
+        <br>
+    </main>
+    <footer class="footer">
+        <p>Made by Nathan</p>
+        <p>Você pode visitar a API clicando neste link: <a href="https://pokeapi.co/">PokéAPI</a></p>
+    </footer>
+    </center>
+    <script src="js/script.js"></script>
+</body>
+</html>
